@@ -1,0 +1,28 @@
+﻿<Window x:Class="TicketSystemDesktop.Views.LoginView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Login" Height="220" Width="360"
+        WindowStartupLocation="CenterScreen">
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock Text="Username" Grid.Row="0" Margin="0,0,0,4"/>
+        <TextBox x:Name="txtUsername" Grid.Row="1" Height="26" Margin="0,0,0,8"/>
+
+        <TextBlock Text="Password" Grid.Row="2" Margin="0,8,0,4"/>
+        <PasswordBox x:Name="txtPassword" Grid.Row="3" Height="26" Margin="0,0,0,12"/>
+
+        <Button Content="Login"
+                Width="100"
+                Height="30"
+                HorizontalAlignment="Right"
+                VerticalAlignment="Bottom"
+                Margin="0,8,0,0"
+                Click="Login_Click"/>
+    </Grid>
+</Window>
